@@ -5,12 +5,13 @@ import About from "../about/about";
 import Help from "../help/help";
 import NotFound from "../not_found/not_found";
 import MainLayout from "../layouts/main_layouts";
+import Products from "../products/products";
 
 const Router: React.FC = () => (
   <Routes>
     <Route path="/" element={<MainLayout />}>
       <Route index element={<Home />} />
-      <Route path="/products" element={<Product />} />
+      <Route path="/products" element={<Products />} />
       <Route path="/products/:productId" element={<Product />} />
       <Route path="/about" element={<About />} />
       <Route path="/help" element={<Help />} />

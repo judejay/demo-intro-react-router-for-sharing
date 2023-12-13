@@ -4,11 +4,9 @@ import Router from "./components/router/router";
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Router />
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   );
 }
 
